@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/logo-favi.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/logo-favi.png" />
     <title>Solution Web Company</title>
     <meta
       name="description"
-      content="GRT Responsive Menu - Simple and lightweight fixed responsive menu for your website"
+      content="Solution Web Company es una empresa especializada en el desarrollo de aplicaciones, páginas web, blogs y aplicaciones móviles hibridas, de igual forma especializados en SEO, para así obtener el éxito en su empresa"
     />
-    <meta name="author" content="grt107" />
+    <meta name="”robots”" content="”index," follow” />
+    <meta
+      name="keywords"
+      content="Empresa de desarrollo web, página web, aplicacion web, internet, celular actual, blogs"
+    />
+    <meta name="author" content="17920368" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Demo CSS file not needed for the plugin -->
     <link
@@ -19,6 +26,7 @@
     <!-- GRT Youtube Plugin CSS -->
     <link rel="stylesheet" href="css/grt-responsive-menu.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <script src="js/index.js" defer></script>
   </head>
   <body>
@@ -26,7 +34,9 @@
       <div class="menu-container">
         <div class="grt-menu-row">
           <div class="grt-menu-logo">
-            <a href="#" class="grt-logo"><img src="img/logo.jpeg" /></a>
+            <a href="#heroImage" class="grt-logo"
+              ><img src="img/logo.jpeg"
+            /></a>
           </div>
           <div class="grt-menu-right">
             <nav>
@@ -35,7 +45,9 @@
                 ><span class="line3"></span>
               </button>
               <ul class="grt-menu">
-                <li><a href="#heroImage">Inicio</a></li>
+                <li class="active gtr-menu__li">
+                  <a href="#heroImage">Inicio</a>
+                </li>
                 <li><a href="#about">Nosotros</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#gallery">Galeria</a></li>
@@ -54,27 +66,18 @@
         </div>
       </div>
     </article>
-    <article class="about container" id="about">
+    <article class="about container article-white" id="about">
       <section class="about-main">
         <h2 class="about-main__title">NOSOTROS</h2>
-        <img src="" alt="" class="about__img" />
+        <img src="img/about.png" alt="About" class="about__img" />
         <p class="about-main__paragraph">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
           quibusdam. Cupiditate voluptate ea totam in rem cum beatae, nam
           perferendis.
         </p>
-        <h3 class="about-main__chooseUs">¿Por qué elegirnos?</h3>
         <div class="about-main__why">
+          <h3 class="about-main__chooseUs">¿Por qué elegirnos?</h3>
           <div class="why__li">
-            <ul>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Tempore provident totam exercitationem.</li>
-              <li>Sint in beatae consequuntur?</li>
-              <li>Reiciendis odio culpa laudantium?</li>
-              <li>Sint excepturi dicta impedit.</li>
-            </ul>
-          </div>
-          <div class="why__li1">
             <ul>
               <li>Lorem ipsum dolor sit.</li>
               <li>Tempore provident totam exercitationem.</li>
@@ -101,13 +104,31 @@
           repellendus.
         </p>
       </section>
-      <section class="about-vission">
-        <h3 class="about-vission__title">Visión</h3>
-        <img src="" alt="" class="about-vision__img" />
-        <p class="about-vission__paragraph">
+      <section class="about-values">
+        <h3 class="about-values__title">Visión</h3>
+        <img src="" alt="" class="aboutvalues__img" />
+        <p class="about-values__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
           repellendus.
         </p>
+        <div class="about-values__li">
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Tempore provident totam exercitationem.</li>
+            <li>Sint in beatae consequuntur?</li>
+            <li>Reiciendis odio culpa laudantium?</li>
+            <li>Sint excepturi dicta impedit.</li>
+          </ul>
+        </div>
+        <div class="about-values__li1">
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Tempore provident totam exercitationem.</li>
+            <li>Sint in beatae consequuntur?</li>
+            <li>Reiciendis odio culpa laudantium?</li>
+            <li>Sint excepturi dicta impedit.</li>
+          </ul>
+        </div>
       </section>
     </article>
     <article class="services container article-blue" id="services">
@@ -193,14 +214,14 @@
         </div>
       </section>
     </article>
-    <article class="gallery container" id="gallery">
-      <h2 class="gallery__title">GALERIA</h2>
+    <article class="gallery container article-white" id="gallery">
+      <h2 class="gallery__title">GALERÍA</h2>
       <p class="gallery_paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <section class="gallery-projects">
         <div class="projects-container">
-          <img src="img/proy1.PNG" alt="Proyecto1" />
+          <img src="img/proy11.png" alt="Proyecto1" />
           <div class="description-hover">
             <h4>Blogs</h4>
             <p class="description-hover-paragraph">
@@ -220,7 +241,7 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy2.PNG" alt="Proyecto 2" />
+          <img src="img/proy2.png" alt="Proyecto 2" />
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -230,7 +251,77 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy3.PNG" alt="Proyecto 3" />
+          <img src="img/proy3.png" alt="Proyecto 3" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy4.png" alt="Proyecto 4" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy5.png" alt="Proyecto 5" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy6.png" alt="Proyecto 6" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy7.png" alt="Proyecto 7" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy8.png" alt="Proyecto 8" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy9.png" alt="Proyecto 9" />
+          <div class="description-hover">
+            <h4>Blog</h4>
+            <p class="description-hover-paragraph">
+              Publique su web en tiendas de apps facilitando su acceso y
+              visualización.
+            </p>
+          </div>
+        </div>
+        <div class="projects-container">
+          <img src="img/proy10.png" alt="Proyecto 10" />
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -243,9 +334,12 @@
     </article>
     <article class="contact container article-blue" id="contact">
       <h2 class="contact-title">PONERSE EN CONTACTO</h2>
-      <p class="contact-paragraph">Lorem ipsum dolor sit amet.</p>
+      <p class="contact-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur,
+        nam modi corrupti cumque veniam?
+      </p>
       <section class="contact-flexbox">
-        <section class="contact-form">
+        <section>
           <form class="contact-form" action="#contact">
             <input
               type="text"
@@ -285,79 +379,54 @@
         <section class="contact-info">
           <h3 class="contact-info__title">Datos de contacto</h3>
           <div class="contact-info__address">
-            <h4 class="address-title">Dirección</h4>
-            <p class="address-paragraph">Lorem ipsum dolor sit amet.</p>
+            <h4 class="address-title">
+              <i class="fa fa-map-marker" aria-hidden="true"> </i> Dirección
+            </h4>
+            <p class="address-paragraph">
+              Calle Valerio trujano en el número exterior 113 del estado de
+              Oaxaca, México.
+            </p>
           </div>
           <div class="contact-info__phone">
-            <h4 class="phone-title">Teléfono</h4>
-            <p class="phone-paragraph">Lorem ipsum dolor sit amet.</p>
+            <h4 class="phone-title">
+              <i class="fa fa-phone" aria-hidden="true"></i> Teléfono
+            </h4>
+            <a href="tel:9513548975" class="text-decoration">
+              <p class="phone-paragraph">+52 1 951 354 89 75</p>
+            </a>
           </div>
           <div class="contact-info__email">
-            <h4 class="email-title">Email</h4>
-            <p class="email-paragraph">lorem@gmail.com</p>
+            <h4 class="email-title">
+              <i class="fa fa-envelope" aria-hidden="true"></i> Email
+            </h4>
+            <a
+              class="text-decoration"
+              href="mailto:solutionweb.company@gmail.com?body=¡Quiero%20una%20página%20asombrosa!"
+            >
+              <p class="email-paragraph">solutionweb.company@gmail.com</p>
+            </a>
           </div>
         </section>
       </section>
       <section class="social">
-        <a href="https://www.facebook.com/SolutionWebCompany" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-facebook"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-            />
-          </svg>
-        </a>
-        <a href="https://twitter.com/SolutionWebCom1" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-twitter"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-            />
-          </svg>
-        </a>
+        <!-- <div class="social__facebook"> -->
         <a
-          href="mailto:solutionweb.company@gmail.com?body=¡Quiero%20una%20página%20asombrosa!"
+          class="social__facebook"
+          href="https://www.facebook.com/SolutionWebCompany"
+          target="_blank"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-envelope-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
-            />
-          </svg>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
-        <a href="tel:9513548975">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-telephone-outbound-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
+        <!-- </div> -->
+        <!-- <div class="social__twitter"> -->
+        <a
+          class="social__twitter"
+          href="https://twitter.com/SolutionWebCom1"
+          target="_blank"
+        >
+          <i class="fa fa-twitter" aria-hidden="true"></i>
         </a>
+        <!-- </div> -->
       </section>
     </article>
     <!-- Jquery -->
@@ -367,7 +436,5 @@
     <!-- GRT Youtube Popup -->
     <script src="js/grt-responsive-menu.js"></script>
   </body>
-  <footer>
-    © 2018 Issaaf Kattan React Land Page Template. Design by TemplateWire
-  </footer>
+  <footer class="footer article-white">© 2021 Solution Web Company.</footer>
 </html>
