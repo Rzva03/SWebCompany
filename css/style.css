@@ -77,25 +77,71 @@ ul.grt-menu li a {
   margin-top: 10px;
   width: 100%;
 }
-.about-main__why {
+/* About Why */
+/* This coding are about main why and values */
+.about-main__why,
+.about-values {
+  text-align: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-.why__li ul {
+.why__li ul,
+.about-values__li ul {
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 5vw;
   width: 100%;
+  text-align: left;
 }
-.why__li ul li:before {
+.why__li ul li:before,
+.about-values__li ul li:before {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #5ca9fb;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
+}
+/* Mission, vission, values */
+.about-mission,
+.about-vission,
+.about-values {
+  width: 100%;
+  text-align: center;
+}
+.about-mission__title,
+.about-values__title,
+.about-vission__title {
+  margin-block-start: 2em;
+  margin-block-end: 0em;
+}
+.about-mission__paragraph,
+.about-values__paragraph,
+.about-vission__paragraph {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Mission */
+/* Values */
+.about-values {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-values ul {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-values__li:first-of-type {
+  margin-top: 5vh;
 }
 /* Services */
 .services__title {
@@ -122,6 +168,7 @@ ul.grt-menu li a {
 .services-container__service {
   width: 70vw;
   height: auto;
+  margin-bottom: 5vh;
 }
 .service-icon {
   width: 120px;
@@ -145,6 +192,9 @@ ul.grt-menu li a {
 .service-icon__title,
 .service-icon__paragraph {
   text-align: center;
+}
+.service-icon__paragraph {
+  color: rgba(255, 255, 255, 0.75);
 }
 /* Gallery */
 .gallery__title {
