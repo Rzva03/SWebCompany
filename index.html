@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <script src="js/lightbox-plus-jquery.js" defer></script>
     <link rel="stylesheet" href="css/css-demo-page.css" />
     <!-- GRT Youtube Plugin CSS -->
     <link rel="stylesheet" href="css/grt-responsive-menu.css" />
@@ -71,19 +73,17 @@
         <h2 class="about-main__title">NOSOTROS</h2>
         <img src="img/about.png" alt="About" class="about__img" />
         <p class="about-main__paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
-          quibusdam. Cupiditate voluptate ea totam in rem cum beatae, nam
-          perferendis.
+          Somos una empresa de desarrollo web que reune la experiencia y
+          liderazgo para así ofrecer servicios de calidad.
         </p>
         <div class="about-main__why">
           <h3 class="about-main__chooseUs">¿Por qué elegirnos?</h3>
           <div class="why__li">
             <ul>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Tempore provident totam exercitationem.</li>
-              <li>Sint in beatae consequuntur?</li>
-              <li>Reiciendis odio culpa laudantium?</li>
-              <li>Sint excepturi dicta impedit.</li>
+              <li>Somos una empresa responsable.</li>
+              <li>Garantizamos la calidad del servicio.</li>
+              <li>Adaptación a sus necesidades.</li>
+              <li>Ofrecemos soluciones de primera calidad.</li>
             </ul>
           </div>
         </div>
@@ -112,8 +112,7 @@
         <h3 class="about-values__title">Valores</h3>
         <img src="" alt="" class="aboutvalues__img" />
         <p class="about-values__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-          repellendus.
+          Definen nuestra forma de trabajar con clientes y socios.
         </p>
         <div class="about-values__li">
           <ul>
@@ -138,8 +137,8 @@
     <article class="services container article-blue" id="services">
       <h2 class="services__title">NUESTROS SERVICIOS</h2>
       <p class="services__paragraph">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus,
-        quisquam eaque repudiandae debitis numquam recusandae!
+        Contamos con diferentes servicios para satisfacer las necesidades que se
+        requieran.
       </p>
       <section class="services-container">
         <div class="services-container__service">
@@ -224,12 +223,12 @@
     </article>
     <article class="gallery container article-white" id="gallery">
       <h2 class="gallery__title">GALERÍA</h2>
-      <p class="gallery_paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+      <p class="gallery_paragraph">Conoce casos reales de clientes.</p>
       <section class="gallery-projects">
         <div class="projects-container">
-          <img src="img/proy11.png" alt="Proyecto1" />
+          <a href="img/proy11.png" data-lightbox="roadtrip">
+            <img src="img/proy11.png" alt="Proyecto1" />
+          </a>
           <div class="description-hover">
             <h4>Blogs</h4>
             <p class="description-hover-paragraph">
@@ -239,7 +238,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/Document.png" alt="Proyecto Artesanias" />
+          <a href="img/Document.png" data-lightbox="roadtrip">
+            <img src="img/Document.png" alt="Proyecto Artesanias" />
+          </a>
           <div class="description-hover">
             <h4>Punto de venta Artesanias</h4>
             <p class="description-hover-paragraph">
@@ -249,7 +250,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy2.png" alt="Proyecto 2" />
+          <a href="img/proy2.png" data-lightbox="roadtrip">
+            <img src="img/proy2.png" alt="Proyecto 2" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -259,7 +262,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy3.png" alt="Proyecto 3" />
+          <a href="img/proy3.png" data-lightbox="roadtrip">
+            <img src="img/proy3.png" alt="Proyecto 3" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -269,7 +274,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy4.png" alt="Proyecto 4" />
+          <a href="img/proy4.png" data-lightbox="roadtrip">
+            <img src="img/proy4.png" alt="Proyecto 4" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -279,7 +286,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy5.png" alt="Proyecto 5" />
+          <a href="img/proy5.png" data-lightbox="roadtrip">
+            <img src="img/proy5.png" alt="Proyecto 5" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -289,7 +298,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy6.png" alt="Proyecto 6" />
+          <a href="img/proy6.png" data-lightbox="roadtrip">
+            <img src="img/proy6.png" alt="Proyecto 6" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -299,7 +310,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy7.png" alt="Proyecto 7" />
+          <a href="img/proy7.png" data-lightbox="roadtrip">
+            <img src="img/proy7.png" alt="Proyecto 7" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -309,7 +322,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy8.png" alt="Proyecto 8" />
+          <a href="img/proy8.png" data-lightbox="roadtrip">
+            <img src="img/proy8.png" alt="Proyecto 8" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -319,7 +334,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy9.png" alt="Proyecto 9" />
+          <a href="img/proy9.png" data-lightbox="roadtrip">
+            <img src="img/proy9.png" alt="Proyecto 9" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
@@ -329,7 +346,9 @@
           </div>
         </div>
         <div class="projects-container">
-          <img src="img/proy10.png" alt="Proyecto 10" />
+          <a href="img/proy10.png" data-lightbox="roadtrip">
+            <img src="img/proy10.png" alt="Proyecto 10" />
+          </a>
           <div class="description-hover">
             <h4>Blog</h4>
             <p class="description-hover-paragraph">
