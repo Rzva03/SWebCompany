@@ -497,18 +497,42 @@ ul.grt-menu li a {
     margin-left: 5%;
     margin-right: 5%;
   }
+  .about-vission,
+  .about-mission,
+  .about-values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .about-mission,
+  .about-values {
+    flex-direction: row-reverse;
+  }
+  .about-mision__img,
+  .about-values__img,
+  .about-vision__img {
+    width: 60%;
+    margin-left: initial;
+    margin-right: initial;
+  }
   /* -------------------------------------------------------------------------- */
   /*                          Mission, vission, values                          */
   /* -------------------------------------------------------------------------- */
   .about-mission__paragraph,
-  .about-values__paragraph,
   .about-vission__paragraph {
     margin-block-start: 0em;
     margin-block-end: 0em;
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%;
+    text-align: justify;
+    word-spacing: 6px;
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: 20vh;
+  }
+  .about-values__li ul li {
+    margin-bottom: 5px;
   }
   /* -------------------------------------------------------------------------- */
   /*                                  Services                                  */
