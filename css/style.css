@@ -1,8 +1,14 @@
+html,
+body {
+  margin: 0;
+}
 :root {
-  --image: url(../img/hero-img.jpg);
+  --image: url(../img/banner1.jpeg);
   --heroImage: url(../img/hero-img2.png);
 }
-/* Style */
+/* -------------------------------------------------------------------------- */
+/*                                    Style                                   */
+/* -------------------------------------------------------------------------- */
 .container {
   padding-top: 40px;
   margin-right: auto;
@@ -21,7 +27,9 @@
 .grt-menu-logo a img {
   border-radius: 50%;
 }
-/* Hero image */
+/* -------------------------------------------------------------------------- */
+/*                                 Hero image                                 */
+/* -------------------------------------------------------------------------- */
 .heroImage {
   min-height: 100vh;
   background-image: var(--heroImage);
@@ -50,12 +58,16 @@
   margin: auto;
   text-transform: capitalize;
 }
-/* Menu */
+/* -------------------------------------------------------------------------- */
+/*                                    Menu                                    */
+/* -------------------------------------------------------------------------- */
 ul.grt-menu li a {
   text-transform: capitalize;
 }
-/* About */
-.about {
+/* -------------------------------------------------------------------------- */
+/*                                    About                                   */
+/* -------------------------------------------------------------------------- */
+.about-main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -66,6 +78,8 @@ ul.grt-menu li a {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 .about-main__paragraph {
   width: 90%;
@@ -73,11 +87,19 @@ ul.grt-menu li a {
   margin-right: auto;
   text-align: center;
 }
-.about__img {
+/* -------------------------------------------------------------------------- */
+/*                This coding are about, vision, mission image                */
+/* -------------------------------------------------------------------------- */
+.about__img,
+.about-mision__img,
+.about-vision__img,
+.about-values__img {
   margin-top: 10px;
   width: 100%;
 }
-/* About Why */
+/* -------------------------------------------------------------------------- */
+/*                                  About Why                                 */
+/* -------------------------------------------------------------------------- */
 /* This coding are about main why and values */
 .about-main__why,
 .about-values {
@@ -104,18 +126,25 @@ ul.grt-menu li a {
   font-weight: 300;
   padding-right: 8px;
 }
-/* Mission, vission, values */
+/* -------------------------------------------------------------------------- */
+/*                          Mission, vission, values                          */
+/* -------------------------------------------------------------------------- */
 .about-mission,
 .about-vission,
 .about-values {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .about-mission__title,
 .about-values__title,
 .about-vission__title {
   margin-block-start: 2em;
   margin-block-end: 0em;
+  text-align: center;
 }
 .about-mission__paragraph,
 .about-values__paragraph,
@@ -127,8 +156,9 @@ ul.grt-menu li a {
   margin-left: auto;
   margin-right: auto;
 }
-/* Mission */
-/* Values */
+/* -------------------------------------------------------------------------- */
+/*                                   Values                                   */
+/* -------------------------------------------------------------------------- */
 .about-values {
   text-align: center;
   width: 100%;
@@ -143,7 +173,9 @@ ul.grt-menu li a {
 .about-values__li:first-of-type {
   margin-top: 5vh;
 }
-/* Services */
+/* -------------------------------------------------------------------------- */
+/*                                  Services                                  */
+/* -------------------------------------------------------------------------- */
 .services__title {
   font-weight: bolder;
   text-align: center;
@@ -196,7 +228,9 @@ ul.grt-menu li a {
 .service-icon__paragraph {
   color: rgba(255, 255, 255, 0.75);
 }
-/* Gallery */
+/* -------------------------------------------------------------------------- */
+/*                                   Gallery                                  */
+/* -------------------------------------------------------------------------- */
 .gallery__title {
   font-weight: bolder;
   text-align: center;
@@ -241,6 +275,7 @@ ul.grt-menu li a {
   height: 90%;
   margin-left: auto;
   margin-right: auto;
+  transition: all 400ms ease-out;
 }
 .description-hover {
   position: absolute;
@@ -259,7 +294,7 @@ ul.grt-menu li a {
   visibility: visible;
 }
 .projects-container:hover > .description-hover h4 {
-  /* margin-top: 5vh; */
+  margin-top: 5vh;
   margin-bottom: auto;
 }
 .projects-container:hover > img {
@@ -268,7 +303,7 @@ ul.grt-menu li a {
 .description-hover h4 {
   color: #fff;
   font-weight: bolder;
-  /* margin-bottom: 10vh; */
+  margin-bottom: 5vh;
   transition: all 400ms ease-out;
   margin-top: 10vh;
   font-size: 2rem;
@@ -280,7 +315,9 @@ ul.grt-menu li a {
   width: 100%;
   font-weight: bolder;
 }
-/* Contact */
+/* -------------------------------------------------------------------------- */
+/*                                   Contact                                  */
+/* -------------------------------------------------------------------------- */
 .contact-title {
   font-weight: bolder;
   text-align: center;
@@ -345,7 +382,9 @@ ul.grt-menu li a {
   color: black;
   cursor: pointer;
 }
-/* Contact Info */
+/* -------------------------------------------------------------------------- */
+/*                                Contact Info                                */
+/* -------------------------------------------------------------------------- */
 .contact-info {
   width: 80%;
   margin-left: auto;
@@ -362,7 +401,9 @@ ul.grt-menu li a {
 .text-decoration {
   text-decoration: none;
 }
-/* Social */
+/* -------------------------------------------------------------------------- */
+/*                                   Social                                   */
+/* -------------------------------------------------------------------------- */
 .social {
   padding-top: 10vh;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -390,10 +431,194 @@ ul.grt-menu li a {
   font-weight: 400;
   color: white;
 }
-/* footer */
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
 .footer {
   width: 100%;
   text-align: center;
   padding: 5vh 0 5vh 0;
   color: #888;
+}
+/* -------------------------------------------------------------------------- */
+/*                             Desktop only style                             */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  /* -------------------------------------------------------------------------- */
+  /*                                 Hero image                                 */
+  /* -------------------------------------------------------------------------- */
+  .heroImage {
+    background-image: var(--image);
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                Console Title                               */
+  /* -------------------------------------------------------------------------- */
+  .console-container {
+    font-size: 2rem;
+    letter-spacing: 20px;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                    About                                   */
+  /* -------------------------------------------------------------------------- */
+  .about-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .about-main__paragraph {
+    font-size: 1.2rem;
+  }
+  .about__img {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .about-main__why,
+  .about-values {
+    text-align: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 20%;
+    margin-top: 10vh;
+  }
+  .why__li ul,
+  .about-values__li ul {
+    padding-inline-start: 1vw;
+  }
+  .about__img,
+  .about-mision__img,
+  .about-vision__img,
+  .about-values__img {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                          Mission, vission, values                          */
+  /* -------------------------------------------------------------------------- */
+  .about-mission__paragraph,
+  .about-values__paragraph,
+  .about-vission__paragraph {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                  Services                                  */
+  /* -------------------------------------------------------------------------- */
+  .services__paragraph {
+    font-size: 1.2rem;
+  }
+  .services-container {
+    width: 100%;
+  }
+  .services-container__service {
+    width: 30%;
+    height: auto;
+    margin-bottom: 5vh;
+  }
+  .service-icon__paragraph {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                   Gallery                                  */
+  /* -------------------------------------------------------------------------- */
+  .gallery_paragraph {
+    font-size: 1.2rem;
+  }
+  .projects-container {
+    width: 20%;
+  }
+  .description-hover {
+    margin-top: 30%;
+    height: 55%;
+  }
+  .description-hover h4 {
+    margin-top: 1.5vh;
+    font-size: 1.2rem;
+  }
+  .description-hover-paragraph {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                   Contact                                  */
+  /* -------------------------------------------------------------------------- */
+  .contact-paragraph {
+    font-size: 1.2rem;
+  }
+  .contact-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .contact-form {
+    width: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .contact-form input:last-of-type {
+    display: block;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                Contact Info                                */
+  /* -------------------------------------------------------------------------- */
+  .contact-info {
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .phone-paragraph,
+  .email-paragraph,
+  .address-paragraph {
+    width: 50%;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                   Social                                   */
+  /* -------------------------------------------------------------------------- */
+  .social {
+    padding-top: 10vh;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .social__facebook,
+  .social__twitter {
+    background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+    border: 2px solid white;
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+    line-height: 1;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-weight: 400;
+    color: white;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                                   Footer                                   */
+  /* -------------------------------------------------------------------------- */
 }
