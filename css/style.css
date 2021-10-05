@@ -151,10 +151,12 @@ ul.grt-menu li a {
 .about-vission__paragraph {
   margin-block-start: 0em;
   margin-block-end: 0em;
-  width: 80%;
+  width: 85%;
+  word-spacing: 5px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5vh;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   Values                                   */
@@ -166,7 +168,7 @@ ul.grt-menu li a {
   margin-right: auto;
 }
 .about-values ul {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
