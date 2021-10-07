@@ -28,6 +28,9 @@ body {
   border-radius: 50%;
 }
 /* -------------------------------------------------------------------------- */
+/*                             Mobile only style                             */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 /*                                 Hero image                                 */
 /* -------------------------------------------------------------------------- */
 .heroImage {
@@ -141,14 +144,16 @@ ul.grt-menu li a {
 }
 .about-mission__title,
 .about-values__title,
-.about-vission__title {
+.about-vission__title,
+.about-team__title {
   margin-block-start: 2em;
   margin-block-end: 0em;
   text-align: center;
 }
 .about-mission__paragraph,
 .about-values__paragraph,
-.about-vission__paragraph {
+.about-vission__paragraph,
+.about-team__paragraph {
   margin-block-start: 0em;
   margin-block-end: 0em;
   width: 85%;
@@ -175,6 +180,48 @@ ul.grt-menu li a {
 .about-values__li:first-of-type {
   margin-top: 5vh;
 }
+/* -------------------------------------------------------------------------- */
+/*                                 About-Team                                 */
+/* -------------------------------------------------------------------------- */
+.about-team {
+  width: 100%;
+}
+.team-people {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-people-card {
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-people-card__img {
+  width: 100%;
+  height: 30vh;
+}
+.team-people-card__name {
+  font-size: 1.1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #333;
+  margin-block-end: 0em;
+  text-align: center;
+}
+.team-peole-card__position {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 2vh;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                  Services                                  */
 /* -------------------------------------------------------------------------- */
@@ -474,7 +521,8 @@ ul.grt-menu li a {
     flex-wrap: wrap;
     width: 100%;
   }
-  .about-main__paragraph {
+  .about-main__paragraph,
+  .about-team__paragraph {
     font-size: 1.2rem;
   }
   .about__img {
@@ -540,6 +588,17 @@ ul.grt-menu li a {
   .about-values__li ul li {
     margin-bottom: 5px;
   }
+  /* -------------------------------------------------------------------------- */
+  /*                                 About-Team                                 */
+  /* -------------------------------------------------------------------------- */
+  .team-people {
+    width: 100%;
+  }
+  .team-people-card {
+    width: 20%;
+    margin-top: 5vh;
+  }
+
   /* -------------------------------------------------------------------------- */
   /*                                  Services                                  */
   /* -------------------------------------------------------------------------- */
