@@ -58,24 +58,30 @@ function consoleText(words, id, colors) {
 /* -------------------------------------------------------------------------- */
 /*                                  dark mode                                 */
 /* -------------------------------------------------------------------------- */
-const darkmode = document.querySelector("#check-dark");
+// const darkmode = document.querySelector("#check-dark");
+// const body = document.querySelector("body");
+
+// load();
+
+// darkmode.addEventListener("click", (e) => {
+//   body.classList.toggle("dark-mode");
+//   store(body.classList.contains("darkmode"));
+// });
+
+// function load() {
+//   const darkmode = localStorage.getItem("darkmode");
+//   if (!darkmode) {
+//     store("false");
+//   } else if (darkmode == "true") {
+//     store("true");
+//     body.classList.add("darkmode");
+//   }
+// }
+// function store(value) {
+//   localStorage.setItem("darkmode", value);
+// }
+const chk = document.getElementById("chk");
 const body = document.querySelector("body");
-
-load();
-
-darkmode.addEventListener("click", (e) => {
+chk.addEventListener("change", () => {
   body.classList.toggle("dark-mode");
-  store(body.classList.contains("darkmode"));
 });
-
-function load() {
-  const darkmode = localStorage.getItem("darkmode");
-  if (!darkmode) {
-    store("false");
-  } else if (darkmode == "true") {
-    body.classList.add("darkmode");
-  }
-}
-function store(value) {
-  localStorage.setItem("darkmode", value);
-}

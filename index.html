@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="img/logo-favi.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/logo-favi.png" />
+    <link rel="shortcut icon" href="img/logo-2.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/logo-2.png" />
     <title>Solution Web Company</title>
     <meta
       name="description"
@@ -28,8 +28,12 @@
     <!-- GRT Youtube Plugin CSS -->
     <link rel="stylesheet" href="css/grt-responsive-menu.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <script src="js/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/1934e005fb.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -37,7 +41,7 @@
         <div class="grt-menu-row">
           <div class="grt-menu-logo">
             <a href="#heroImage" class="grt-logo"
-              ><img src="img/logo.jpeg"
+              ><img src="img/logo-2.png"
             /></a>
           </div>
           <div class="grt-menu-right">
@@ -55,7 +59,14 @@
                 <li class="gtr-menu__li"><a href="#gallery">Galeria</a></li>
                 <li class="gtr-menu__li"><a href="#contact">Contacto</a></li>
                 <li>
-                  <button id="check-dark" class="check-dark">Oscuro</button>
+                  <div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="far fa-moon"></i>
+                      <i class="far fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -78,7 +89,7 @@
         para así ofrecer servicios de calidad.
       </p>
       <section class="about-main">
-        <img src="img/about.png" alt="About" class="about__img" />
+        <img src="img/about-PhotoRoom.png" alt="About" class="about__img" />
         <div class="about-main__why">
           <h3 class="about-main__chooseUs">¿Por qué elegirnos?</h3>
           <div class="why__li">
@@ -93,7 +104,11 @@
       </section>
       <h3 class="about-mission__title">Misión</h3>
       <section class="about-mission">
-        <img src="img/mision.jpg" alt="Mission" class="about-mision__img" />
+        <img
+          src="img/mision-PhotoRoom.png"
+          alt="Mission"
+          class="about-mision__img"
+        />
         <p class="about-mission__paragraph">
           Somos una empresa de desarrollo comprometida con la creación de
           soluciones que unen el diseño, la tecnología y la información, para
@@ -103,7 +118,11 @@
       </section>
       <h3 class="about-vission__title">Visión</h3>
       <section class="about-vission">
-        <img src="img/vision.jpeg" alt="vision" class="about-vision__img" />
+        <img
+          src="img/vision-PhotoRoom.png"
+          alt="vision"
+          class="about-vision__img"
+        />
         <p class="about-vission__paragraph">
           La empresa Solution Web Company tiene como fin crear soluciones web de
           acuerdo a las necesidades del cliente, y con ello ser en un futuro
@@ -113,7 +132,11 @@
       </section>
       <h3 class="about-values__title">Valores</h3>
       <section class="about-values">
-        <img src="img/values.jpg" alt="values" class="about-values__img" />
+        <img
+          src="img/values-PhotoRoom.png"
+          alt="values"
+          class="about-values__img"
+        />
         <div class="about-values__li">
           <ul>
             <li>Compromiso</li>
@@ -305,19 +328,6 @@
           </div>
         </div>
         <div class="projects-container">
-          <a href="img/proy2.png" data-lightbox="roadtrip">
-            <img src="img/proy2.png" alt="Proyecto 2" />
-          </a>
-          <div class="description-hover">
-            <a href="img/proy2.png" data-lightbox="roadtrip">
-              <h4>Página Web</h4>
-              <p class="description-hover-paragraph">
-                Pagina web de artículos cortos actualizados y novedosos.
-              </p>
-            </a>
-          </div>
-        </div>
-        <div class="projects-container">
           <a href="img/proy3.png" data-lightbox="roadtrip">
             <img src="img/proy3.png" alt="Proyecto 3" />
           </a>
@@ -421,6 +431,32 @@
             >
           </div>
         </div>
+        <div class="projects-container">
+          <a href="img/proy12.png" data-lightbox="roadtrip">
+            <img src="img/proy12.png" alt="Proyecto 12" />
+          </a>
+          <div class="description-hover">
+            <a href="img/proy12.png" data-lightbox="roadtrip">
+              <h4>Página Web</h4>
+              <p class="description-hover-paragraph">
+                Muestre información de su empresa o negocio con una página.
+              </p></a
+            >
+          </div>
+        </div>
+        <div class="projects-container">
+          <a href="img/proy13.png" data-lightbox="roadtrip">
+            <img src="img/proy13.png" alt="Proyecto 13proy13.png" />
+          </a>
+          <div class="description-hover">
+            <a href="img/proy13.png" data-lightbox="roadtrip">
+              <h4>Página Web</h4>
+              <p class="description-hover-paragraph">
+                Muestre información de su empresa o negocio con una página.
+              </p></a
+            >
+          </div>
+        </div>
       </section>
     </article>
     <article class="contact container article-blue" id="contact">
@@ -474,8 +510,14 @@
               <i class="fa fa-map-marker" aria-hidden="true"> </i> Dirección
             </h4>
             <p class="address-paragraph">
-              Calle Valerio trujano en el número exterior 113 del estado de
-              Oaxaca, México.
+              <a
+                href="https://goo.gl/maps/Rcte6G1f9U4fmEQR9"
+                target="_blank"
+                class="text-decoration"
+              >
+                Calle Valerio trujano en el número exterior 113 del estado de
+                Oaxaca, México.</a
+              >
             </p>
           </div>
           <div class="contact-info__phone">
