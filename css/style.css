@@ -1,10 +1,19 @@
 html,
 body {
   margin: 0;
+  padding: 0;
+  /* transition: all 4s ease-in-out;
+  -webkit-transition: all 4s ease-in-out;
+  -moz-transition: all 4s ease-in-out;
+  -ms-transition: all 4s ease-in-out;
+  -o-transition: all 4s ease-in-out; */
 }
+
 :root {
   --image: url(../img/banner1.jpeg);
   --heroImage: url(../img/hero-img2.png);
+  --heroImageDark: url(../img/bann-dark.jpeg);
+  --heroDark: url(../img/bann-dark2.jpeg);
 }
 /* -------------------------------------------------------------------------- */
 /*                                    Style                                   */
@@ -521,7 +530,7 @@ ul.grt-menu li a {
   /* -------------------------------------------------------------------------- */
   .console-container {
     font-size: 2rem;
-    letter-spacing: 20px;
+    letter-spacing: 5px;
   }
   /* -------------------------------------------------------------------------- */
   /*                                    About                                   */
@@ -724,7 +733,65 @@ ul.grt-menu li a {
     font-weight: 400;
     color: white;
   }
-  /* -------------------------------------------------------------------------- */
-  /*                                   Footer                                   */
-  /* -------------------------------------------------------------------------- */
+}
+/* -------------------------------------------------------------------------- */
+/*                               Dark mode only style                         */
+/* -------------------------------------------------------------------------- */
+body.dark-mode {
+  background-color: black !important;
+}
+/* -------------------------------------------------------------------------- */
+/*                            Hero Image dark mode                            */
+/* -------------------------------------------------------------------------- */
+.dark-mode .heroImage {
+  background-image: var(--heroImageDark);
+  background-position: right;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+.dark-mode header {
+  background-color: black;
+  color: white;
+}
+.dark-mode header ul.grt-menu li a {
+  color: white;
+}
+.dark-mode header.scrolled {
+  box-shadow: white 0px 0px 20px 0px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                article dark                                */
+/* -------------------------------------------------------------------------- */
+.dark-mode .article-white {
+  background: black;
+  color: white !important;
+}
+.dark-mode .article-blue {
+  background: #303030;
+  color: white !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           Desktop only style dark                          */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .dark-mode .heroImage {
+    background-image: var(--heroDark);
+    background-position: left;
+  }
+  .dark-mode header .grt-mobile-button {
+    background: black;
+    color: #fff;
+  }
+
+  .dark-mode header .grt-mobile-button .line1,
+  .dark-mode header .grt-mobile-button .line2,
+  .dark-mode header .grt-mobile-button .line3 {
+    background-color: #fff;
+  }
+  .dark-mode header ul.open-grt-menu {
+    background: black;
+  }
 }

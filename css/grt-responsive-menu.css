@@ -108,7 +108,7 @@ ul.grt-menu li.active a:after {
   content: "";
   left: 12px;
   right: 12px;
-  border-bottom: 2px solid #ee2b34;
+  border-bottom: 2px solid #6372ff;
 }
 
 @keyframes fadeIn {
@@ -131,7 +131,7 @@ ul.grt-menu li.grt-dropdown:hover a {
 ul.grt-menu li.grt-dropdown ul.grt-dropdown-list {
   display: none;
   position: absolute;
-  background: #ee2b34;
+  background: #6372ff;
   margin: 0;
   padding: 0;
   min-width: 150px;
@@ -154,7 +154,7 @@ ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li:last-child a {
 }
 
 ul.grt-menu li.grt-dropdown.active-dropdown {
-  background: #ee2b34;
+  background: #6372ff;
 }
 
 ul.grt-menu li.grt-dropdown.active-dropdown ul.grt-dropdown-list {
@@ -178,12 +178,12 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 
   ul.grt-menu li.grt-dropdown:hover > a {
     color: #fff;
-    box-shadow: inset 150px 0 0 0 #ee2b34;
+    box-shadow: inset 150px 0 0 0 #6372ff;
   }
 
   ul.grt-menu li a:hover {
     color: #fff;
-    box-shadow: inset 150px 0 0 0 #ee2b34;
+    box-shadow: inset 150px 0 0 0 #6372ff;
   }
 }
 
