@@ -55,33 +55,42 @@ function consoleText(words, id, colors) {
     }
   }, 400);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                             Change class active                            */
+/* -------------------------------------------------------------------------- */
+let liActive = 0;
+let liMenu = document.querySelectorAll(".gtr-menu__li");
+
+liMenu.forEach((element, index) => {
+  element.addEventListener("click", function () {
+    console.log(element, index);
+    changeActive(index);
+  });
+});
+
+function changeActive(index) {
+  liMenu[liActive].classList.remove("active");
+  liMenu[index].classList.add("active");
+  liActive = index;
+}
 /* -------------------------------------------------------------------------- */
 /*                                  dark mode                                 */
 /* -------------------------------------------------------------------------- */
-// const darkmode = document.querySelector("#check-dark");
-// const body = document.querySelector("body");
 
-// load();
-
-// darkmode.addEventListener("click", (e) => {
-//   body.classList.toggle("dark-mode");
-//   store(body.classList.contains("darkmode"));
-// });
-
-// function load() {
-//   const darkmode = localStorage.getItem("darkmode");
-//   if (!darkmode) {
-//     store("false");
-//   } else if (darkmode == "true") {
-//     store("true");
-//     body.classList.add("darkmode");
-//   }
-// }
-// function store(value) {
-//   localStorage.setItem("darkmode", value);
-// }
+const logo = document.getElementById("logo");
 const chk = document.getElementById("chk");
 const body = document.querySelector("body");
 chk.addEventListener("change", () => {
+  console.log(chk.checked);
   body.classList.toggle("dark-mode");
+  changeLogo();
 });
+
+function changeLogo() {
+  if (chk.checked == true) {
+    logo.src = "../img/logo-dark.png";
+  } else {
+    logo.src = "../img/logo-2.png";
+  }
+}
