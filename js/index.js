@@ -78,7 +78,7 @@ function changeActive(index) {
 /*                                  dark mode                                 */
 /* -------------------------------------------------------------------------- */
 
-const logo = document.getElementById("logo");
+// const logo = document.getElementById("logo");
 const chk = document.getElementById("chk");
 const body = document.querySelector("body");
 chk.addEventListener("change", () => {
