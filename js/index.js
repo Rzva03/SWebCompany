@@ -84,13 +84,13 @@ const body = document.querySelector("body");
 chk.addEventListener("change", () => {
   console.log(chk.checked);
   body.classList.toggle("dark-mode");
-  changeLogo();
+  // changeLogo();
 });
 
-function changeLogo() {
-  if (chk.checked == true) {
-    logo.src = "../img/logo-dark.png";
-  } else {
-    logo.src = "../img/logo-2.png";
-  }
-}
+// function changeLogo() {
+//   if (chk.checked == true) {
+//     logo.src = "../img/logo-dark.png";
+//   } else {
+//     logo.src = "../img/logo-2.png";
+//   }
+// }
