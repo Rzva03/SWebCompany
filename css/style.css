@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-  --image: url(../img/banner1.jpeg);
+  --image: url(../img/webdeveloper.jpg);
   --heroImage: url(../img/hero-img2.png);
   --heroImageDark: url(../img/bann-dark.jpeg);
   --heroDark: url(../img/bann-dark2.jpeg);
