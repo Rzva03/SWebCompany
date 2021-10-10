@@ -257,19 +257,23 @@ ul.grt-menu li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 80%;
-  max-width: 90%;
+  width: 100%;
+  /* max-width: 90%; */
   margin-left: auto;
   margin-right: auto;
 }
 .team-people-card {
-  max-width: 95%;
+  /* max-width: 95%; */
+  width: 100%;
   margin-top: 5vh;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .team-people-card__img {
-  width: 100%;
+  width: 50%;
+  max-width: 60%;
   height: 30vh;
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -285,7 +289,9 @@ ul.grt-menu li a {
   color: #333;
   margin-block-end: 0em;
   text-align: center;
-  width: 90%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-peole-card__position {
   font-size: 1rem;
@@ -674,14 +680,31 @@ ul.grt-menu li a {
   /* -------------------------------------------------------------------------- */
   /*                                 About-Team                                 */
   /* -------------------------------------------------------------------------- */
-  .team-people {
+  /* .team-people {
     width: 100%;
   }
   .team-people-card {
     max-width: 20%;
     margin-top: 5vh;
+  } */
+  .team-people {
+    width: 100%;
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .team-people-card {
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .team-people-card__img {
+    width: 80%;
+    max-width: 85%;
   }
 
+  .team-people-card__name {
+    width: 100%;
+  }
   /* -------------------------------------------------------------------------- */
   /*                                  Services                                  */
   /* -------------------------------------------------------------------------- */
