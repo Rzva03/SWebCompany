@@ -1,18 +1,9 @@
-/*!
- * GRT Responsive Menu - jQuery Plugin
- * Version: 1.1
- * Author: GRT107
- *
- * Copyright (c) 2018 GRT107
- * Released under the MIT license
- */
-
 // Create a function for mobile version
 (function ($) {
   $.fn.grtmobile = function () {
     $(".grt-mobile-button").on("click", function () {
       $(this).toggleClass("grt-mobile-button-open");
-      $("ul.grt-menu").toggleClass("open-grt-menu ");
+      $("ul.grt-menu").toggleClass("open-grt-menu");
       // $("html, body").toggleClass("body-overflow");
     });
     $("li.grt-dropdown").on("click", function (e) {
@@ -21,13 +12,15 @@
   };
 })(jQuery);
 
-function closeMenu() {
-  let ulGrtMenu = document.querySelector("gtr-menu");
-  let ulGrtMobileButton = document.querySelector("grt-mobile-button");
-  // ulGrtMenu.classList.toggle("grt-mobile-button-close");
-  ulGrtMenu.classList.removeClass("active");
-  ulGrtMobileButton.classList.removeClass("active");
-}
+let liMenuMobile = document.querySelectorAll(".gtr-menu__li");
+let mobileButton = document.querySelector(".grt-mobile-button");
+let ulMenu = document.getElementsByClassName("ul.grt-menu");
+liMenuMobile.forEach((element) => {
+  element.addEventListener("click", function () {
+    $(".grt-mobile-button").removeClass("grt-mobile-button-open");
+    $("ul.grt-menu").removeClass("open-grt-menu");
+  });
+});
 
 // Initialize and check for mobile
 $.fn.grtmobile();
@@ -39,12 +32,4 @@ $(window).scroll(function (e) {
   } else {
     $("header").removeClass("scrolled");
   }
-});
-
-// Prevent a href clicks on dropdown category item
-$("gtr-menu__li > a").on("click", function (e) {
-  // e.preventDefault();
-  // return true;
-  closeMenu();
-  console.log("prueba");
 });

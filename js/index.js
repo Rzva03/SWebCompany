@@ -64,7 +64,6 @@ let liMenu = document.querySelectorAll(".gtr-menu__li");
 
 liMenu.forEach((element, index) => {
   element.addEventListener("click", function () {
-    console.log(element, index);
     changeActive(index);
   });
 });
@@ -77,20 +76,8 @@ function changeActive(index) {
 /* -------------------------------------------------------------------------- */
 /*                                  dark mode                                 */
 /* -------------------------------------------------------------------------- */
-
-// const logo = document.getElementById("logo");
 const chk = document.getElementById("chk");
 const body = document.querySelector("body");
 chk.addEventListener("change", () => {
-  console.log(chk.checked);
   body.classList.toggle("dark-mode");
-  // changeLogo();
 });
-
-// function changeLogo() {
-//   if (chk.checked == true) {
-//     logo.src = "../img/logo-dark.png";
-//   } else {
-//     logo.src = "../img/logo-2.png";
-//   }
-// }
