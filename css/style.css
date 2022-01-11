@@ -631,7 +631,7 @@ ul.grt-menu li a {
   .about-vision__img,
   .about-values__img {
     margin-top: 10px;
-    width: 50%;
+    width: 40%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -655,7 +655,7 @@ ul.grt-menu li a {
   .about-mision__img,
   .about-values__img,
   .about-vision__img {
-    width: 60%;
+    width: 40%;
     margin-left: initial;
     margin-right: initial;
   }
@@ -698,8 +698,14 @@ ul.grt-menu li a {
     margin-right: 0;
   }
   .team-people-card__img {
-    width: 80%;
-    max-width: 85%;
+    width: 50%;
+    height: 50%;
+    max-width: 75%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
 
   .team-people-card__name {
